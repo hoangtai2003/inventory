@@ -12,7 +12,7 @@ class ProductController extends Controller
     {
         return Product::all();
     }
-    public function store(Request $request)
+    public function create(Request $request)
     {
         $validated = $request->validate([
            'name' => 'required|max:255',
